@@ -1,0 +1,55 @@
+<ion-view view-title="GC CCS WEEK 2016">
+  <ion-content class="">
+		<br>
+		<img src="img/poster.jpg" width="100%" height="70%" > 
+		
+		
+		
+		
+		
+		
+		<div class="card">
+		  	  <div class="item item-divider item-balanced item">
+				Event Information
+			</div>
+		  <div class="item item-text-wrap">
+			<p><span class="title"> Date</span><br>
+			October 26 (Wednesday) - October 29 (Saturday)<br><br>
+			<span class="title"> Locations</span><br>
+			Brgy. East Tapinac Covered Court | Gordon College | Harbor Point Ayala Mall  | Travelers Hotel, SBMA </p>
+		  </div>
+		</div>
+		<div class="card">
+			  <div class="item item-divider item-calm ">
+				Event Feeds
+			  </div>
+			<div ng-controller ="newsCtrl">
+			  <div class="item item-divider item-text-wrap" ng-repeat="x in names | limitTo: 2">
+				<p>{{x.News}}</p>
+				<p>{{x.Description}}</p>
+			  </div>
+			</div>
+		</div>
+<!-- 		<div class="card">
+			  <div class="item item-divider item-assertive ">
+				Whats new
+
+			  </div>
+			<div class="item item-divider item-text-wrap" >
+					<img src="img/bsemc.jpg" width="100%" height="10%" > 
+			  </div>
+			 
+		</div> -->
+		<div class="card">
+			<div class="item item-divider item-balanced item">
+				Social Links
+		  </div>
+			<div class="button-bar ">
+			  <a class="button button-positive icon ion-social-facebook" href="https://www.facebook.com/GordonCollegeCcs/?fref=ts"></a>
+			  <a class="button  button-calm  icon ion-social-twitter" href="https://twitter.com/GC_CCS"></a>
+			  <a class="button  button-assertive icon ion-social-google"  href="mailto:gordoncollegeccs.edu.ph"></a>
+			</div>
+		</div>
+	
+  </ion-content>
+</ion-view>

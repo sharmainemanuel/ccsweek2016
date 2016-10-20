@@ -1,0 +1,14 @@
+<ion-view view-title="GC CCS WEEK 2016">
+  <ion-content class="padding">
+<label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" ng-model="searchText" placeholder="Search">
+  </label>
+<div ng-controller ="newsCtrl">
+			  <div class="item item-divider item-text-wrap" ng-repeat="x in names | filter: searchText">
+				<p>{{x.News}}</p>
+				<p>{{x.Description}}</p>
+			  </div>
+			</div>
+  </ion-content>
+</ion-view>

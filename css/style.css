@@ -1,0 +1,45 @@
+/* Empty. Add your own CSS if you like */
+
+.title{
+font-weight:bold;
+}
+.description{
+font-size:10pt;
+}
+.teams{
+font-weight:bold;
+}
+.em{
+font-weight:bold;
+margin-left:25px;}
+.em i {font-style:italic;font-weight:normal;}
+.addinfo{color:red;}
+
+.button-garnet{
+background-color: #751806;
+color: white;
+}
+.button-amethyst{
+background-color: #A40DFF;
+color:white;
+}
+.button-aqua{
+background-color: #BDF7FF;
+}
+.button-diamond{
+background-color: #F3FFF9;
+color:black;
+}
+.speaker{
+
+	font-size:10px;
+}
+div .3r{
+
+	background-color: green;
+}
+
+.changeColor{
+
+	color: white;
+}
