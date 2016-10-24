@@ -86,8 +86,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/team',
     views: {
       'menuContent': {
-        templateUrl: 'templates/teams.html'
+        templateUrl: 'templates/teams.html',
+		controller: 'teamsCtrl'
       }
+	  
     }
   })
   .state('app.updates', {
@@ -107,6 +109,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+
    /* .state('app.playlists', {
       url: '/playlists',
       views: {

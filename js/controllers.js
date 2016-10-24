@@ -42,15 +42,21 @@ angular.module('starter.controllers', [])
 })
 
 .controller('newsCtrl', function($scope, $http) {
-	//alert("hala");
-   // $http.get("http://gordoncollegeccs.edu.ph/gcccs2/ccsweek.php")
-   // .then(function (response) {$scope.names = response.data.records;});
-   
-   $scope.names =  [
-			{ News: 'Winner', Description: "Team A", Category: "NONe", include: false },
-			{ News: '2nd', Description: "Team A", Category: "NONe", include: false }
-			
-		];
+
+	$http.get("http://iligtas.ph/ccsweek/feeds.php")
+     .then(function (response) {
+
+      $scope.names = response.data;
+	  console.log(response.data);
+	 });
+		
+})
+.controller('teamsCtrl', function($scope, $http) {
+	$http.get("db.json")
+     .then(function (response) {
+	console.log(response);
+      $scope.teams = response.data;
+	 });
 })
 
 

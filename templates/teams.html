@@ -1,7 +1,17 @@
 <ion-view view-title="Teams">
   <ion-content class="padding">
-<div class="list">
-  <a class="item item-avatar-left 3rs item-balanced" href="#">
+<div class="list" ng-repeat="team in teams">
+  
+	
+	 <a class="item item-avatar-left {{team.add}} {{team.color}}" href="#">
+      <h2 class="teams">Team {{team.id}} - {{team.name}} </h2>
+      <h2>{{team.advocacy}}</h2>
+      <p>{{team.adviser}}</p>
+    </a>
+		
+	
+	<!-- 
+	<a class="item item-avatar-left 3rs item-balanced" href="#">
       <h2 class="teams">Team 1 - Queen Green Gaea </h2>
       <h2>3RS</h2>
       <p>Ms. Liezel Armada</p>
@@ -49,7 +59,7 @@
       <h2>Gender Equality</h2>
       <p>Ms. Jenny Bolutate</p>
     </a>
-	
+	 -->
 	
 	
 
